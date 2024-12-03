@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         *{margin: 0PX;
+             padding: 0PX;
+        }
+         .con{background-color: black;
+                 color: aliceblue;
+                 display: flex;
+                 height: 80px;
+                justify-content: space-between;
+                
+             }
+        .a{padding-bottom: 50px; 
+                 font-size: 40px;
+           }
+        li{margin: 10px;
+            cursor: pointer;
+            transition: all 1s;
+          }
+       ul{display: flex;
+              list-style: none;
+         }
+      li:hover{font-size:35px;
+               color: rgb(0, 0, 0);
+            padding: 10px;
+        border-radius: 10px; background-color: rgb(255, 255, 255);}
+      .card{border: 1px solid black;
+         width: 200px;
+           height: 200px;
+        margin: 50px;
+        padding: 3px;
+        box-shadow: 10px 10px 10px 5px gray;
+        transition: all 1s;
+       }
+       .card:hover{
+        box-shadow:  1px 1px 1px 1px gray; 
+        transform: scale(0.5) rotate(360deg); 
+       }
+                  
+       .main{display: flex;}      
+        
+    </style>
+</head>
+<body> 
+    <div class="con" >
+               <div class="a"> 
+                    <p >Shri Dadaji Institute Of Technology And Science</p>
+               </div>
+                <div >
+                    <ul >
+                        <li>HOME</li>
+                        <li>About</li>
+                        <li>Academics</li>
+                        <li>T&P</li>
+                        <li>Cells</li>
+                        <li>Commitees</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+     </div>
+    <div class="main">
+        <div class="card"><h1>B.TECH</h1></div>
+        <div class="card"><H1>M.TECH</H1></div>
+        <div class="card"><h1>MBA</h1></div>
+    </div>
+</body>
+</html>
