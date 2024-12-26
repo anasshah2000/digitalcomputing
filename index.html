@@ -58,7 +58,25 @@
     0 0 4rem #3877ff,
     inset 0 0 4rem #3877ff;
 }
+@media screen and (max-width: 768px) {
+  .circle:nth-child(1) {
+    width: 40vw;  /* Increase width on smaller screens */
+  }
 
+  .circle:nth-child(2) {
+    width: 30vw;  /* Increase width on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .circle:nth-child(1) {
+    width: 50vw;  /* Even larger width on very small screens */
+  }
+
+  .circle:nth-child(2) {
+    width: 40vw;  /* Even larger width on very small screens */
+  }
+}
 .sign .cir {
   aspect-ratio: 1;
   position: absolute;
