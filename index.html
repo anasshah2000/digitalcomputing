@@ -20,6 +20,28 @@
   display: flex;
 }
 
+        @media screen and (max-width: 768px) {
+  #navlist {
+     gap: 1.5rem;
+  height: 10vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}  /* Increase width on smaller screens */
+  }
+
+        @media screen and (max-width: 480px) {
+  #navlist {
+     gap: 1rem;
+  height: 8vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}  /* Increase width on smaller screens */
+  }
+
 
 
 
@@ -27,6 +49,16 @@
   text-transform: uppercase;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 768px) {
+  .circle:nth-child(1) {
+       text-transform: uppercase;
+  font-size: 0.8rem;/* Increase width on smaller screens */
+  }
+@media screen and (max-width: 480px) {
+  .circle:nth-child(1) {
+       text-transform: uppercase;
+  font-size: 0.5rem;/* Increase width on smaller screens */
+  }
 
 
 .design .circle {
@@ -135,58 +167,8 @@
   color: aliceblue;
 }
 
-.deresume .cirresume {
-  aspect-ratio: 1;
-  position: absolute;
-  border-radius: 50%;
-
-  top: auto;
-  left: 70%;
-
-  transform: translate(-50%, -50%);
-}
 
 
-.cirresume:nth-child(1) {
-  background: linear-gradient(90deg, transparent 50%, rgb(247, 255, 90) 50%);
-  width: 28rem;
-}
-
-.cirresume:nth-child(2) {
-  width: 22rem;
-  background-image: url("ana.jpg");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  border: .5rem solid white;
-  box-shadow:
-    0 0 5rem #fff,
-
-    inset 0 0 3rem #fff,
-    0 0 2rem #3877ff,
-    inset 0 0 3rem #3877ff,
-    0 0 4rem #3877ff,
-    inset 0 0 4rem #3877ff;
-}
-        @media screen and (max-width: 768px) {
-  .cirresume:nth-child(1) {
-    width: 40vw; 
-      display: flex:/* Increase width on smaller screens */
-  }
-
-  .cirresume:nth-child(2) {
-    width: 30vw;  /* Increase width on smaller screens */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .cirresume:nth-child(1) {
-    width: 50vw;  /* Even larger width on very small screens */
-  }
-
-  .cirresume:nth-child(2) {
-    width: 40vw;  /* Even larger width on very small screens */
-  }
-}
 
 #home {
   background: linear-gradient(#8cff8c, #262525);
