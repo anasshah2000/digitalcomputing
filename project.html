@@ -1,22 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 </head>
+
 <body>
-    <div class="h-56 w-56 rounded-full bg-green-600 animate-bounce mx-96 mt-32" id="circle">
+    
+        <div class=" bg-gradient-to-r from-blue-300 to-pink-400  md:h-screen md:p-11 " id="mode">
+            <div class="bg-[url(cold.jpeg)]  bg-no-repeat bg-cover " id="img" onclick="change()">
+    
+
+        <div class="flex justify-around mt-2 sm:text-center sm:texl-lg mt-5 ">
+            <button onclick="light()" id="light" class="text-green-500">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <h1>light mode</h1>
+
+                </button>
+
+            <h1 class="text-3xl text-orange-500 font-bold sm:texl-sm">Anas shah</h1>
+            <ul class="flex gap-10 text-xl text-black md:gap-5 sm:gap-3">
+                <li>Home</li>
+                <li>About</li>
+                <li>Desing</li>
+                <li>Contect</li>
+            </ul>
+            <h1>
+
+                <input type="text" placeholder="Type to Sreach " class="border-2 border-gray-700 text-white text-lg">
+                <button class="w-14 h-8 text-lg bg-orange-500 text-white"> Search</button>
+            </h1>
+            <button onclick="dark()" id="dark"  class="text-green-500">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <h1>dark mode</h1>
+            </button>
+        </div>
+        <!-- main div -->
+        <div class="justify-around flex border-2 border-bg-black my-14 mx-10 p-5 bg-opacity-100">
+            <!-- first div  -->
+            <div>
+                <h1 class=" text-2xl text-red-500 font-bold mt-24 my-3">Hello' Poples</h1>
+                <h1 class=" text-2xl text-orange-500 font-bold my-3">I'M Anas shah</h1>
+                <h1 id="typed" class="text-green-500 text-2xl my-3">Web Desinger</h1>
+
+                <h1 class="text-gray-800 my-3">Web Design is a specialisation of the design stream. <br>They also use
+                    HTML, CSS,WYSIWYG editing software, <br> mark up validators etc..
+                    to create design elements.</h1>
+
+                <button class=" justify-center w-32 h-7 text-black bg-orange-500 rounded-l-lg rounded-r-lg"> JOIN
+                    US</button>
+                <span id="typed"></span>
+                <script>
+                    var typed = new Typed('#typed', {
+                        strings: [' Web Desinger.', '.Web Developer'],
+                        typeSpeed: 50,
+                        backSpeed: 100,
+                        loop: true
+                    });
+                </script>
+
+
+            </div>
+
+            <!-- secound div -->
+             <form action="https://anasshah2000.github.io/digitalcomputingtasks/">
+
+                 
+                 <div class="bg-opacity-50 border-2 border-bg-black p-14  mt-14">
+                     <button
+                     class="bg-white text-orange-500 w-44 rounded-l-lg rounded-r-lg text-ml-10  h-7 justify-center sm:flex md:flex mt-24 ">Login
+                     Here</button>
+                     
+                     <h1> <input type="text" placeholder="Enter Email Here"
+                        class="text-white texl-xl bg-transparent mt-10 mb-2 border-b-2 my-5"></h1>
+                        
+                        <h1><input type="text" placeholder="Enter Email Here"
+                            class="text-white texl-xl bg-transparent mt-10 mb-2 border-b-2 my-5"></h1>
+                            
+                            <h1>
+                                <button
+                                class="bg-orange-500 text-black w-44  rounded-l-lg rounded-r-lg text-ml-10 h-7 justify-center sm:flex md:flex my-5">Login
+                                Here</button>
+                            </h1>
+                            <h1 class=" text-xl text-green-600  sm:mx-4">
+                                <a href="https://www.facebook.com/profile.php?id=100053450075905&mibextid=ZbWKwL"
+                                class="hover:text-blue-500 sm:mx-2 mx-5"><i class="fa-brands fa-facebook-f"></i> </a>
+                                <a href="https://www.instagram.com/md.anas.official?igsh=ZmE5bG9rNXVpY3hm" class="hover:text-pink-500 sm:mx-2 mx-5">
+                                    <i class="fa-brands fa-instagram"></i> </a>
+                                    <a href=" https://anasshah2000.github.io/digitalcomputingtasks/" class="hover:text-black sm:mx-2 mx-5"> <i
+                                        class="fa-brands fa-github"></i> </a>
+                                        <a href="https://www.snapchat.com/add/anas_8832?share_id=KcfmVpGDZGU&locale=en-GB"
+                                        class="hover:text-yellow-300  sm:mx-2 mx-5"><i class="fa-brands fa-snapchat"></i></a>
+                                    </h1>
+                                    
+                                </form>
+            </div>
+
+        </div>
+
+
+
 
     </div>
-
-    <script>
-        const circle = document.getElementById('circle')
-        setTimeout ( function(){
-            circle.style.backgroundColor = '#7dd3fc' ;
-        }, 2000);
-    </script>
-    
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
