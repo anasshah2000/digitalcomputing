@@ -388,46 +388,47 @@
 
     <!-- contact to start-- -->
 
-    <div id="contact" class="bg-[#262525] w-full">
-
-        <section id="contact" class=" text-white w-full md:w-7/10 md:pl-16">
-            <h1 class="text-3xl font-bold mb-6 text-center ">Contact <span class="text-red-600 text-3xl">Us</span></h1>
-            <form action="">
-
-                <div class="space-y-4 grid-cols-1">
-                    <div class="text-center">
-
-                        <input type="text" placeholder="Your Name"
-                            class="w-96 p-4 bg-gray-800 text-white rounded border-gray-800" required>
-                    </div>
-                    <div class="text-center">
-
-                        <input type="email" placeholder="Your Email" class="w-96 p-4 bg-gray-800 text-white rounded"
-                            required>
-                    </div>
-                    <div class="text-center">
-
-                        <input type="text" placeholder="Subject" class="w-96 p-4 bg-gray-800 text-white rounded "
-                            required>
-                    </div>
-                    <div class="text-center">
-
-                        <textarea placeholder="Your Message" class="w-96 p-4 bg-gray-800 text-white rounded"
-                            required></textarea>
-                    </div>
-                    <div class="text-center">
-
-                        <button type="submit"
-                            class="w-96 p-4 bg-red-600 text-white rounded hover:bg-transparent hover:border-red-600 border-2">
-                            Submit
-                        </button>
-                    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white p-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Contact Me</h2>
+            <form id="contactForm" class="space-y-4 max-w-md mx-auto">
+                <div>
+                    <label for="name" class="block text-gray-700">Your Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter your name" required>
                 </div>
+                <div>
+                    <label for="email" class="block text-gray-700">Your Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700">Your Message</label>
+                    <textarea id="message" name="message" class="w-full p-3 border border-gray-300 rounded-md" rows="4" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">Send Message</button>
             </form>
+        </div>
+    </section>
 
+    <script>
+        // JavaScript for contact form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent the default form submission behavior
 
-        </section>
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
 
+            if (name && email && message) {
+                alert(`Thank you for your message, ${name}! We will get back to you soon.`);
+                contactForm.reset(); // Reset form fields
+            } else {
+                alert('Please fill in all the fields.');
+            }
+        });
+    </script>
 
         <!-- contact to end-- -->
 
