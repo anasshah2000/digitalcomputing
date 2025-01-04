@@ -150,19 +150,7 @@
   bottom: #111;
 }
 
-.icons {
-  display: flex;
-  justify-content: center;
-  color: aliceblue;
-}
 
-.icons a {
-  text-decoration: none;
-  padding: 10px;
-  background-color: wheat;
-  margin: 10px;
-  border-radius: 50%;
-}
 
 * {
   
