@@ -32,64 +32,81 @@
 
     <div class="flex flex-col md:flex-row h-screen">
 
-        <!-- Left Container -->
-        <div class="bg-[#262525] w-full h-full ms:w-full pl-12 md:pl-16 flex items-center">
-
-            <div class="text-white text-2xl flex flex-col justify-center gap-8  ms:text-sm" >
-                <a href="https://www.facebook.com/profile.php?id=100053450075905&mibextid=ZbWKwL"
-                    class="hover:text-blue-500"><i class="fa-brands fa-facebook-f"></i> </a>
-                <a href="https://www.instagram.com/md.anas.official?igsh=ZmE5bG9rNXVpY3hm" class="hover:text-pink-500">
-                    <i class="fa-brands fa-instagram"></i> </a>
-                <a href=" https://anasshah2000.github.io/digitalcomputingtasks/" class="hover:text-black"> <i
-                        class="fa-brands fa-github"></i> </a>
+        <div class= " bg-gradient-to-r from-purple-300 to-pink-300 w-full md:w-7/10 h-full pl-6 sm:pl-4 md:pl-16 flex items-center">
+            <div class="text-white text-2xl flex flex-col justify-center gap-8 " id="icons">
+                <a href="https://www.facebook.com/share/15gXaD1Uqa/" class="hover:text-blue-500 sm:text-lg"><i class="fa-brands fa-facebook-f"></i> </a>
+                <a href="https://www.instagram.com/md.anas.official?igsh=ZmE5bG9rNXVpY3hm" class="hover:text-pink-500 sm:text-lg"><i class="fa-brands fa-instagram"></i> </a>
+                <a href="" class="hover:text-black sm:text-lg"><i class="fa-brands fa-github"></i> </a>
                 <a href="https://www.snapchat.com/add/anas_8832?share_id=KcfmVpGDZGU&locale=en-GB"
-                    class="hover:text-black "><i class="fa-brands fa-snapchat"></i></a>
+                    class="hover:text-yellow-300 "><i class="fa-brands fa-snapchat"></i></a>
             </div>
-
-
+    
             <div class="ml-0 md:ml-14">
-                <h1 class="text-2xl font-bold text-white  ms:text-sm" id="element"> Hello I'm <span class="text-green-600 text-xl  ms:text-sm" id="element">Anas
-                        Shah</span></h1>
-                <h1 class="text-4xl md:text-5xl font-bold my-3 text-green-700 ml-3  ms:text-sm" id="element">Web Designer</h1>
-                <p class="text-white text-lg md:text-lg max-w-[28rem] mt-4 mb-12 leading-8 ms:text-sm" id="element">passionate web
-                    developer with experience in HTML, CSS,
-                    Basic JavaScript, and Tailwind CSS </p>
-
-                    <span id="element"></span>
-
-                      <!-- Setup and start animation! -->
-            <script>
-                var typed = new Typed('#element'
-                    );
-            </script>  
-
-                </section>
-
-
-
+                <h1 class="text-2xl font-bold text-white intro">Hi I am <span class="text-green-600">Anas Shah</span></h1>
+                <h1 class="text-4xl md:text-5xl font-bold my-3 text-green-700 ml-3 detail">Web Designer</h1>
+                <p class="text-white text-base md:text-lg max-w-[28rem] mt-4 mb-12 leading-8 detail-2">hi! I an Anas shah, Frontend Web Devloper.I love codeing</p>
+    
                 <div class="flex flex-col md:flex-row">
-                    <button
-                        class="border border-green-500 text-lg py-4 text-white px-5 rounded-xl mx-2 bg-green-500 hover:bg-transparent transition duration-300 ease-in mb-4 md:mb-0">
+                    <button class="border border-green-500 text-lg py-4 text-white px-5 rounded-xl mx-2 bg-green-500 hover:bg-transparent transition duration-300 ease-in mb-4 md:mb-0">
                         <a href="#home">Home</a>
                     </button>
-                    <button
-                        class="border border-green-500 text-lg py-4 text-white px-5 rounded-xl mx-2 hover:bg-green-500 transition duration-700 ease-in">
-                        <a href="#project">Projects</a>
+                    <button class="border border-green-500 text-lg py-4 text-white px-5 rounded-xl mx-2 hover:bg-green-500 transition duration-700 ease-in">
+                        <a href="#">Projects</a>
                     </button>
                 </div>
+
+            </div>
+
+            <script>
+                let texts = {
+                    heading: "Web Designer Web Devloper",
+                    intro: "Anas shah", 
+                    detail: "hi! I an Anas shah, Frontend Web Devloper.I love codeing "
+                };
+                
+                let indexes = {
+                    heading: 0,
+                    intro: 0,
+                    detail: 0
+                };
+                
+                const speed = 50;
+            
+                function typeText(element, text, property) {
+                    if (indexes[property] < text.length) {
+                        element.textContent += text.charAt(indexes[property]);
+                        indexes[property]++;
+                        setTimeout(() => typeText(element, text, property), speed);
+                    }
+                }
+            
+                window.onload = function() {
+                    const introSpan = document.querySelector('.intro span');
+                    const heading = document.querySelector('.detail');
+                    const detail = document.querySelector('.detail-2');
+                    
+                    introSpan.textContent = '';
+                    heading.textContent = '';
+                    detail.textContent = '';
+                    
+                    setTimeout(() => typeText(introSpan, texts.intro, 'intro'), 0);
+                    setTimeout(() => typeText(heading, texts.heading, 'heading'), 1000);
+                    setTimeout(() => typeText(detail, texts.detail, 'detail'), 2500);
+                }
+            </script>
+
+        </div>
+    
+        <!-- Right Container -->
+        <div class="bg-gradient-to-l from-purple-300 to-pink-300 w-full sm:w-full md:w-3/10 h-full flex items-center">
+            <div class="design">
+                <div class="circle"></div>
+                <div class="circle"></div>
             </div>
         </div>
-
-       
-        <div class="bg-gradient-to-l from-[#8cff8c] to-[#262525] w-full ms:w-full h-full flex items-center">
-            <div class="design">
-                <div class="circle ms:w-72 md:w-72"></div>
-                <div class="circle ms:w-56 md:w-56"></div>
-            </div>
-            
     </div>
-    </div>
-
+    
+    
 
 
     <!-- home to end -->
