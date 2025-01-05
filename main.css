@@ -27,8 +27,8 @@
 }
 
 .circle:nth-child(1) {
-  background: linear-gradient(90deg, transparent 50%,rgb(244, 111, 217)50%);
-  width: 34rem;
+  background: linear-gradient(90deg, transparent 50%, rgb(244, 111, 217) 50%);
+  width: 32rem;
 }
 
 .circle:nth-child(2) {
