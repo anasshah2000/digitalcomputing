@@ -49,11 +49,11 @@
 
 @media screen and (max-width: 768px) {
   .circle:nth-child(1) {
-    width: 40vw;  /* Increase width on smaller screens */
+    width: 50vw;  /* Increase width on smaller screens */
   }
 
   .circle:nth-child(2) {
-    width: 30vw;  /* Increase width on smaller screens */
+    width: 40vw;  /* Increase width on smaller screens */
   }
 }
 
@@ -231,13 +231,13 @@ a:hover{ color: #f18930;}
 
 .footer-content i:hover{ color: #4752e5;}
 
-.bottom-bar{ background: #f18930;
+.bottom-bar{ background: blue;
            text-align: center;
           padding: 10px 0;
         margin-top: 50px;
       margin-top: 10px;}
 
-        .bottom-bar{ color: Blue;
+        .bottom-bar{ color: white;
                     margin: 0;
                   font-size: 16px;
                   padding: 7px;}
